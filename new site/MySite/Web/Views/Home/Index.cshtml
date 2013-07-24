@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+@section header {
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="active item">
+                <img src="@Url.Content("~/cdn/content/images/banner-1.png")">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Web Solutions</h1>
+                        <p class="lead">I am offering modern web solutions built on the latest technology stack.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="@Url.Content("~/cdn/content/images/banner-1.png")">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Responsive Webdesign</h1>
+                        <p class="lead">Websites for every form factor. This is the way to go!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+}
+
+<div class="container startpage">
+    <h1>Everything about Solutions</h1>
+    <p>I am a passionate Software Architect who is very interested in web technologies and Software design.</p>
+
+    <div class="row-fluid">
+        <div class="span4">
+            <img src="@Url.Content("~/cdn/content/images/Interactive_Projectors_370_250.png")">
+            <h2>Interactive Projectors</h2>
+        </div>
+        <div class="span4">
+            <img src="@Url.Content("~/cdn/content/images/Interactive_whiteboards_370_250.png")">
+            <h2>Interactive Whiteboards</h2>
+        </div>
+        <div class="span4">
+            <img src="@Url.Content("~/cdn/content/images/interactive_classroom_370_250.png")">
+            <h2>Interactive Classroom</h2>
+        </div>
+    </div>
+</div>

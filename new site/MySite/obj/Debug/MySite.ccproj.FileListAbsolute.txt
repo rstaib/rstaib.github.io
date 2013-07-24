@@ -1,0 +1,2 @@
+D:\Rafael.Staib\Documents\GitHub\rstaib.github.io\new site\MySite\bin\Debug\ServiceConfiguration.cscfg
+D:\Rafael.Staib\Documents\GitHub\rstaib.github.io\new site\MySite\bin\Debug\ServiceDefinition.csdef
