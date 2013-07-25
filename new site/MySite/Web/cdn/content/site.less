@@ -23,12 +23,18 @@
 
 body
 {
-    .linearGradient(top, @bodyBg0 80%, @bodyBg100 100%);
+    background: url('images/bg.png') repeat;
+    //.linearGradient(top, @bodyBg0 80%, @bodyBg100 100%);
 
     & > footer
     {
         padding: 20px 30px;
     }
+}
+
+.brand > i
+{
+    margin: 4px 10px 0 0;
 }
 
 .banner
@@ -58,14 +64,14 @@ body
         width: 1170px;
     }
 
-    .item.black
+    .item.orange
     {
-        background: #000;
+        background: url('images/bg-banner-orange.png') repeat;
     }
 
-    .item.red
+    .item.blue
     {
-        background: #f00;
+        background: url('images/bg-banner-blue.png') repeat;
     }
 }
 
