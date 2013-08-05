@@ -14,6 +14,7 @@
 
 .linearGradient (@angle, @colorA, @colorB)
 {
+    background-color: @colorA;
     background-image: linear-gradient(@angle, @colorA, @colorB);
     background-image: -moz-linear-gradient(@angle, @colorA, @colorB);
     background-image: -ms-linear-gradient(@angle, @colorA, @colorB);
@@ -23,7 +24,7 @@
 
 body
 {
-    background: url('images/bg.png') repeat;
+    background: url("images/bg-page.jpg") repeat;
     //.linearGradient(top, @bodyBg0 80%, @bodyBg100 100%);
 
     & > footer
@@ -32,9 +33,9 @@ body
     }
 }
 
-.brand > i
+h1, h2, h3, h4, h5, h6
 {
-    margin: 4px 10px 0 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .banner
@@ -48,9 +49,62 @@ body
     padding: 40px 0 100px;
 }
 
+.navbar
+{
+    & > .navbar-inner
+    {
+        .linearGradient(135deg, #242B35 0, #2C333D 100%);
+        border-color: #2C333D;
+        min-height: 60px;
+
+        .brand
+        {
+            color: #fff;
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            padding: 20px;
+        }
+
+        nav
+        {
+            float: right;
+
+            li > a
+            {
+                color: #fff;
+                padding: 20px 15px;
+            }
+
+            li > a:hover,
+            li.active > a,
+            li.active > a:hover
+            {
+                color: #ff6a00;
+
+                /* Overrides the behavior of bootstrap core */
+                background: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                -webkit-text-shadow: none;
+                text-shadow: none;
+            }
+
+            li.active > a
+            {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
 .carousel
 {
     margin-bottom: 0;
+
+    .item
+    {
+        background: #000;
+    }
 
     .item > img
     {
@@ -64,15 +118,17 @@ body
         width: 1170px;
     }
 
+    /*
     .item.orange
     {
-        background: url('images/bg-banner-orange.png') repeat;
+        background: url("images/bg-banner-orange.png") repeat;
     }
 
     .item.blue
     {
-        background: url('images/bg-banner-blue.png') repeat;
+        background: url("images/bg-banner-blue.png") repeat;
     }
+    */
 }
 
 .carousel-caption

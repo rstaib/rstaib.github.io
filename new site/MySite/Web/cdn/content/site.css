@@ -1,0 +1,172 @@
+﻿body {
+  background: url("images/bg-page.jpg") repeat;
+}
+body > footer {
+  padding: 20px 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.banner {
+  position: relative;
+  margin: 41px 0 0;
+}
+#body {
+  padding: 40px 0 100px;
+}
+.navbar > .navbar-inner {
+  background-color: #242b35 0;
+  background-image: linear-gradient(135deg, #242b35 0, #2c333d 100%);
+  background-image: -moz-linear-gradient(135deg, #242b35 0, #2c333d 100%);
+  background-image: -ms-linear-gradient(135deg, #242b35 0, #2c333d 100%);
+  background-image: -o-linear-gradient(135deg, #242b35 0, #2c333d 100%);
+  background-image: -webkit-linear-gradient(135deg, #242b35 0, #2c333d 100%);
+  border-color: #2C333D;
+  min-height: 60px;
+}
+.navbar > .navbar-inner .brand {
+  color: #fff;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  padding: 20px;
+}
+.navbar > .navbar-inner nav {
+  float: right;
+}
+.navbar > .navbar-inner nav li > a {
+  color: #fff;
+  padding: 20px 15px;
+}
+.navbar > .navbar-inner nav li > a:hover,
+.navbar > .navbar-inner nav li.active > a,
+.navbar > .navbar-inner nav li.active > a:hover {
+  color: #ff6a00;
+  /* Overrides the behavior of bootstrap core */
+
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-text-shadow: none;
+  text-shadow: none;
+}
+.navbar > .navbar-inner nav li.active > a {
+  font-weight: 700;
+}
+.carousel {
+  margin-bottom: 0;
+  /*
+    .item.orange
+    {
+        background: url("images/bg-banner-orange.png") repeat;
+    }
+
+    .item.blue
+    {
+        background: url("images/bg-banner-blue.png") repeat;
+    }
+    */
+
+}
+.carousel .item {
+  background: #000;
+}
+.carousel .item > img {
+  margin: 0 auto;
+}
+.carousel .item > .container {
+  position: relative;
+  margin: 0 auto;
+  width: 1170px;
+}
+.carousel-caption {
+  background: transparent;
+  bottom: 250px;
+}
+.carousel-caption > h1 {
+  font-size: 60px;
+  line-height: 66px;
+  color: #fff;
+  font-weight: normal;
+}
+.container.startpage {
+  text-align: center;
+}
+.container.startpage > h1 {
+  font-size: 46px;
+  font-weight: normal;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+.container.startpage > p {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #999;
+  margin-bottom: 40px;
+}
+.container.startpage h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+@media (max-width: 1199px) {
+  .carousel-caption {
+    bottom: 190px;
+  }
+  .carousel .item > .container {
+    width: 940px;
+  }
+}
+@media (max-width: 979px) {
+  .nav a {
+    padding: 10px 15px !important;
+  }
+  .banner {
+    margin-top: -20px;
+  }
+  .container.startpage h2 {
+    font-size: 20px;
+  }
+  .carousel .item > .container {
+    width: auto;
+  }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.75) 0;
+    background-image: linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
+    background-image: -ms-linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
+    bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .banner {
+    margin: -20px -20px 0;
+  }
+  .carousel-caption {
+    background: none rgba(0, 0, 0, 0.75);
+    position: static;
+  }
+  .carousel-caption > h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  #body {
+    padding: 40px 20px 100px;
+  }
+  #body,
+  body > footer {
+    margin: 0 -20px;
+  }
+  .container.startpage h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 479px) {
+  
+}

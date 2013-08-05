@@ -213,9 +213,16 @@
     <Content Include="cdn\content\images\banner-1.png" />
     <Content Include="cdn\content\images\bg-banner-blue.png" />
     <Content Include="cdn\content\images\bg-banner-orange.png" />
+    <Content Include="cdn\content\images\bg-page.jpg" />
     <Content Include="cdn\content\images\bg.png" />
     <Content Include="cdn\content\images\glyphicons-halflings-white.png" />
     <Content Include="cdn\content\images\glyphicons-halflings.png" />
+    <Content Include="cdn\content\site.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
+    <Content Include="cdn\content\site.min.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
     <Content Include="cdn\scripts\bootstrap-affix.js" />
     <Content Include="cdn\scripts\bootstrap-alert.js" />
     <Content Include="cdn\scripts\bootstrap-button.js" />

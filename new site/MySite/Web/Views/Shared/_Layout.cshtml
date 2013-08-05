@@ -2,7 +2,7 @@
 <html lang="@UICulture">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - Rafael J. Staib</title>
+        <title>@ViewBag.Title - Rafael Staib</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="shortcut icon" href="~/favicon.png">
@@ -13,15 +13,16 @@
         
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
-          <script src="@Url.Content("~/cdn/scripts/html5shiv.js")"></script>
+        <script src="@Url.Content("~/cdn/scripts/html5shiv.js")"></script>
         <![endif]-->
-
+        
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
         @Styles.Render("~/cdn/styles/base")
     </head>
     <body>
         <a name="top"></a>
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -30,21 +31,21 @@
                         <span class="icon-bar"></span>
                     </a>
                     
-                    <a class="brand" href="@Url.Action("Index", "Home")"><i class="icon-star icon-white"></i>Rafael J. Staib</a>
+                    <a class="brand" href="@Url.Action("Index", "Home")">Rafael Staib</a>
                 
-                    <div class="nav-collapse collapse">
+                    <nav class="nav-collapse collapse">
                         <ul class="nav">
-                            <li>@Html.ActionLink("Projects", "Index", "Home")</li>
-                            <li>@Html.ActionLink("Blog", "Index", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Index", "Home")</li>
                             <li>@Html.ActionLink("About", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Blog", "Index", "Home")</li>
+                            <li class="active">@Html.ActionLink("Projects", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Index", "Home")</li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
-        </nav>
+        </div>
         
-        <header class="banner" id="overview" role="banner">
+        <header id="overview" class="banner" role="banner">
             @RenderSection("header", required: true)
         </header>
         
