@@ -15,18 +15,22 @@ h6 {
 .banner {
   position: relative;
   margin: 41px 0 0;
+  background-image: linear-gradient(#ffffff 1%, #f9f9f9 100%);
+  -webkit-box-shadow: 0px 3px 8px 0px #e7e7e7;
+  -moz-box-shadow: 0px 3px 8px 0px #e7e7e7;
+  box-shadow: 0px 3px 8px 0px #e7e7e7;
 }
 #body {
   padding: 40px 0 100px;
 }
 .navbar > .navbar-inner {
   background-color: #242b35 0;
-  background-image: linear-gradient(135deg, #242b35 0, #2c333d 100%);
-  background-image: -moz-linear-gradient(135deg, #242b35 0, #2c333d 100%);
-  background-image: -ms-linear-gradient(135deg, #242b35 0, #2c333d 100%);
-  background-image: -o-linear-gradient(135deg, #242b35 0, #2c333d 100%);
-  background-image: -webkit-linear-gradient(135deg, #242b35 0, #2c333d 100%);
-  border-color: #2C333D;
+  background-image: -moz-linear-gradient(45deg, #242b35 0, #2c333d 100%);
+  background-image: -ms-linear-gradient(45deg, #242b35 0, #2c333d 100%);
+  background-image: -o-linear-gradient(45deg, #242b35 0, #2c333d 100%);
+  background-image: -webkit-linear-gradient(45deg, #242b35 0, #2c333d 100%);
+  background-image: linear-gradient(45deg, #242b35 0, #2c333d 100%);
+  border-color: #242B35;
   min-height: 60px;
 }
 .navbar > .navbar-inner .brand {
@@ -34,6 +38,9 @@ h6 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   padding: 20px;
+}
+.navbar > .navbar-inner .brand:hover {
+  color: #ff6a00;
 }
 .navbar > .navbar-inner nav {
   float: right;
@@ -50,6 +57,7 @@ h6 {
 
   background: none;
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   -webkit-text-shadow: none;
   text-shadow: none;
@@ -71,9 +79,6 @@ h6 {
     }
     */
 
-}
-.carousel .item {
-  background: #000;
 }
 .carousel .item > img {
   margin: 0 auto;
@@ -136,11 +141,11 @@ h6 {
   }
   .carousel-caption {
     background-color: rgba(0, 0, 0, 0.75) 0;
-    background-image: linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
     background-image: -moz-linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
     background-image: -ms-linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
     background-image: -o-linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
     background-image: -webkit-linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
     bottom: 0;
   }
 }

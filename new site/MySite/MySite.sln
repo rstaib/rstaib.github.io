@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "MySite", "MySite.ccproj", "{E80B13B6-6A2E-47A8-9BD9-C2F55A4EA058}"
+Project("{74186AD4-42E2-398E-90D9-104FA35C0E97}") = "MySite", "MySite.ccproj", "{E80B13B6-6A2E-47A8-9BD9-C2F55A4EA058}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{1DCE8A64-040C-4AB3-BEC8-C6D12868A0A8}"
 EndProject

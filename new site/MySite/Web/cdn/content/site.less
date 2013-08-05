@@ -15,11 +15,31 @@
 .linearGradient (@angle, @colorA, @colorB)
 {
     background-color: @colorA;
-    background-image: linear-gradient(@angle, @colorA, @colorB);
     background-image: -moz-linear-gradient(@angle, @colorA, @colorB);
     background-image: -ms-linear-gradient(@angle, @colorA, @colorB);
     background-image: -o-linear-gradient(@angle, @colorA, @colorB);
     background-image: -webkit-linear-gradient(@angle, @colorA, @colorB);
+    background-image: linear-gradient(@angle, @colorA, @colorB);
+}
+
+.noBoxShadow()
+{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.noTextShadow()
+{
+    -webkit-text-shadow: none;
+    text-shadow: none;
+}
+
+.boxShadow(@hShadow, @vShadow, @blur, @spread, @color)
+{
+    -webkit-box-shadow: @hShadow @vShadow @blur @spread @color;
+    -moz-box-shadow: @hShadow @vShadow @blur @spread @color;
+    box-shadow: @hShadow @vShadow @blur @spread @color;
 }
 
 body
@@ -42,6 +62,9 @@ h1, h2, h3, h4, h5, h6
 {
     position: relative;
     margin: 41px 0 0;
+
+    background-image: linear-gradient(rgb(255, 255, 255) 1%, rgb(249, 249, 249) 100%);
+    .boxShadow(0px, 3px, 8px, 0px, #e7e7e7);
 }
 
 #body
@@ -53,8 +76,10 @@ h1, h2, h3, h4, h5, h6
 {
     & > .navbar-inner
     {
-        .linearGradient(135deg, #242B35 0, #2C333D 100%);
-        border-color: #2C333D;
+        @hoverColor: #ff6a00;
+
+        .linearGradient(45deg, #242B35 0, #2C333D 100%);
+        border-color: #242B35;
         min-height: 60px;
 
         .brand
@@ -63,6 +88,11 @@ h1, h2, h3, h4, h5, h6
             font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: 700;
             padding: 20px;
+        }
+
+        .brand:hover
+        {
+            color: @hoverColor;
         }
 
         nav
@@ -79,14 +109,12 @@ h1, h2, h3, h4, h5, h6
             li.active > a,
             li.active > a:hover
             {
-                color: #ff6a00;
+                color: @hoverColor;
 
                 /* Overrides the behavior of bootstrap core */
                 background: none;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-                -webkit-text-shadow: none;
-                text-shadow: none;
+                .noBoxShadow();
+                .noTextShadow();
             }
 
             li.active > a
@@ -103,7 +131,7 @@ h1, h2, h3, h4, h5, h6
 
     .item
     {
-        background: #000;
+        
     }
 
     .item > img
