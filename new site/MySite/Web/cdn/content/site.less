@@ -46,6 +46,8 @@ body
 {
     background: url("images/bg-page.jpg") repeat;
     //.linearGradient(top, @bodyBg0 80%, @bodyBg100 100%);
+    font-size: 0.875em;
+    line-height: 1.429em;
 
     & > footer
     {
@@ -80,46 +82,69 @@ h1, h2, h3, h4, h5, h6
 
         .linearGradient(45deg, #242B35 0, #2C333D 100%);
         border-color: #242B35;
-        min-height: 60px;
+        min-height: 4.286em;
+        padding: 0px;
 
-        .brand
+        h1
         {
-            color: #fff;
-            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            display: block;
+            float: left;
+            font-size: 1.429em;
+            line-height: 1em;
             font-weight: 700;
-            padding: 20px;
-        }
+            margin: 0;
 
-        .brand:hover
-        {
-            color: @hoverColor;
+            & > a
+            {
+                display: inline-block;
+                color: #fff;
+                padding: 1em;
+                text-decoration: none;
+            }
+
+            & > a:hover
+            {
+                color: @hoverColor;
+            }
         }
 
         nav
         {
             float: right;
 
-            li > a
+            & > ul
             {
-                color: #fff;
-                padding: 20px 15px;
-            }
+                margin: 0 0.357em;
 
-            li > a:hover,
-            li.active > a,
-            li.active > a:hover
-            {
-                color: @hoverColor;
+                & > li
+                {
+                    display: inline-block;
 
-                /* Overrides the behavior of bootstrap core */
-                background: none;
-                .noBoxShadow();
-                .noTextShadow();
-            }
+                    & > a
+                    {
+                        color: #fff;
+                        display: block;
+                        padding: 1.429em 1.071em;
+                        text-decoration: none;
+                    }
 
-            li.active > a
-            {
-                font-weight: 700;
+                    & > a:hover,
+                    &.active > a,
+                    &.active > a:hover
+                    {
+                        color: @hoverColor;
+
+                        /* Overrides the behavior of bootstrap core */
+                        background: none;
+                        .noBoxShadow();
+                        .noTextShadow();
+                    }
+
+                    &.active > a
+                    {
+                        font-weight: 700;
+                    }
+                }
             }
         }
     }
@@ -220,11 +245,6 @@ h1, h2, h3, h4, h5, h6
 
 @media (max-width: 979px)
 {
-    .nav a
-    {
-        padding: 10px 15px !important;
-    }
-
     .banner
     {
         margin-top: -20px;
@@ -285,4 +305,35 @@ h1, h2, h3, h4, h5, h6
 
 @media (max-width: 479px)
 {
+    .navbar
+    {
+        & > .navbar-inner
+        {
+            h1
+            {
+                float: none;
+                margin-top: 0.5em;
+                text-align: center;
+                width: 100%;
+
+                & > a
+                {
+                    padding: 0.5em 1em;
+                }
+            }
+
+            nav
+            {
+                float: none;
+                margin-bottom: 0.714em;
+                text-align: center;
+                width: 100%;
+
+                & > ul > li > a
+                {
+                    padding: 0.714em 1.071em;
+                }
+            }
+        }
+    }
 }
