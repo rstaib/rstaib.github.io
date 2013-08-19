@@ -2,6 +2,6 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>http://www.rafaelstaib.com/jquery-steps/index.html</loc>
+    <loc>http://www.rafaelstaib.com</loc>
   </url>
 </urlset>
